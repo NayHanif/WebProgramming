@@ -1,8 +1,3 @@
-<!-- Artikel di ambil dari 
-https://www.kompas.com/hype/read/2021/09/14/170219766/bioskop-cgv-dibuka-lagi-secara-bertahap-mulai-16-september
-https://tekno.kompas.com/read/2021/09/14/16080037/dukung-kreativitas-pengguna-ini-4-mode-fotografi-galaxy-z-fold3-untuk-abadikan
-https://www.kompasiana.com/indahnovita5600/613fe9c501019019894271f3/bagaimana-cara-menerbitkan-buku-di-penerbit-mayor?page=all
--->
 <!doctype html>
 <html lang="en">
   <head>
