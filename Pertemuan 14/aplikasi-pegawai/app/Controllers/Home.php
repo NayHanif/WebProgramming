@@ -11,7 +11,8 @@ class Home extends BaseController
             echo view('dashboard_view');
         }
         else{
-            echo view('login_view');
+            echo "Invalid";
+            return redirect()->to(base_url('/login'))->with('error', "Invalid Credential");
         }
     }
 }
