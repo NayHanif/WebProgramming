@@ -38,6 +38,7 @@ $routes->group('skill', ['filter' => 'authfilter'], function($routes) {
 });
    
 $routes->get('/dashboard', 'Home::index', ['filter' => 'authfilter']);
+$routes->get('/pegawai', 'Home::index', ['filter' => 'authfilter']);
 
 /*
  * --------------------------------------------------------------------
