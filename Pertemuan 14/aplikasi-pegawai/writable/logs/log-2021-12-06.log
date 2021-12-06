@@ -1,0 +1,244 @@
+CRITICAL - 2021-12-06 00:58:26 --> Argument 2 passed to CodeIgniter\Validation\Rules::is_unique() must be of the type string, null given, called in C:\laragon\www\aplikasi-pegawai\system\Validation\Validation.php on line 277
+#0 C:\laragon\www\aplikasi-pegawai\system\Validation\Validation.php(277): CodeIgniter\Validation\Rules->is_unique('123', NULL)
+#1 C:\laragon\www\aplikasi-pegawai\system\Validation\Validation.php(151): CodeIgniter\Validation\Validation->processRules('username', 'username', '123', Array, Array)
+#2 C:\laragon\www\aplikasi-pegawai\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\laragon\www\aplikasi-pegawai\app\Controllers\Register.php(23): CodeIgniter\Controller->validate(Array)
+#4 C:\laragon\www\aplikasi-pegawai\system\CodeIgniter.php(802): App\Controllers\Register->submitRegister()
+#5 C:\laragon\www\aplikasi-pegawai\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#6 C:\laragon\www\aplikasi-pegawai\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\aplikasi-pegawai\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2021-12-06 00:59:45 --> Table 'aplikasi-pegawai.register' doesn't exist
+CRITICAL - 2021-12-06 00:59:45 --> Table 'aplikasi-pegawai.register' doesn't exist
+#0 C:\laragon\www\aplikasi-pegawai\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT 1\nFROM `...')
+#1 C:\laragon\www\aplikasi-pegawai\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\laragon\www\aplikasi-pegawai\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\laragon\www\aplikasi-pegawai\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\laragon\www\aplikasi-pegawai\system\Validation\Rules.php(161): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\aplikasi-pegawai\system\Validation\Validation.php(277): CodeIgniter\Validation\Rules->is_unique('123', 'username', Array, NULL)
+#6 C:\laragon\www\aplikasi-pegawai\system\Validation\Validation.php(151): CodeIgniter\Validation\Validation->processRules('username', 'username', '123', Array, Array)
+#7 C:\laragon\www\aplikasi-pegawai\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#8 C:\laragon\www\aplikasi-pegawai\app\Controllers\Register.php(23): CodeIgniter\Controller->validate(Array)
+#9 C:\laragon\www\aplikasi-pegawai\system\CodeIgniter.php(802): App\Controllers\Register->submitRegister()
+#10 C:\laragon\www\aplikasi-pegawai\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#11 C:\laragon\www\aplikasi-pegawai\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\aplikasi-pegawai\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-12-06 01:01:23 --> required|is_uniquebase_url()/register.username] is not a valid rule.
+#0 C:\laragon\www\aplikasi-pegawai\system\Validation\Validation.php(285): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('required|is_uni...')
+#1 C:\laragon\www\aplikasi-pegawai\system\Validation\Validation.php(151): CodeIgniter\Validation\Validation->processRules('username', 'username', '123', Array, Array)
+#2 C:\laragon\www\aplikasi-pegawai\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#3 C:\laragon\www\aplikasi-pegawai\app\Controllers\Register.php(23): CodeIgniter\Controller->validate(Array)
+#4 C:\laragon\www\aplikasi-pegawai\system\CodeIgniter.php(802): App\Controllers\Register->submitRegister()
+#5 C:\laragon\www\aplikasi-pegawai\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#6 C:\laragon\www\aplikasi-pegawai\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\laragon\www\aplikasi-pegawai\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2021-12-06 01:01:51 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '() ?>
+WHERE `username` = '123'
+ LIMIT 1' at line 2
+CRITICAL - 2021-12-06 01:01:51 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '() ?>
+WHERE `username` = '123'
+ LIMIT 1' at line 2
+#0 C:\laragon\www\aplikasi-pegawai\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT 1\nFROM b...')
+#1 C:\laragon\www\aplikasi-pegawai\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM b...')
+#2 C:\laragon\www\aplikasi-pegawai\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM b...')
+#3 C:\laragon\www\aplikasi-pegawai\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM b...', Array, false)
+#4 C:\laragon\www\aplikasi-pegawai\system\Validation\Rules.php(161): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\aplikasi-pegawai\system\Validation\Validation.php(277): CodeIgniter\Validation\Rules->is_unique('123', 'username', Array, NULL)
+#6 C:\laragon\www\aplikasi-pegawai\system\Validation\Validation.php(151): CodeIgniter\Validation\Validation->processRules('username', 'username', '123', Array, Array)
+#7 C:\laragon\www\aplikasi-pegawai\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#8 C:\laragon\www\aplikasi-pegawai\app\Controllers\Register.php(23): CodeIgniter\Controller->validate(Array)
+#9 C:\laragon\www\aplikasi-pegawai\system\CodeIgniter.php(802): App\Controllers\Register->submitRegister()
+#10 C:\laragon\www\aplikasi-pegawai\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#11 C:\laragon\www\aplikasi-pegawai\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\aplikasi-pegawai\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2021-12-06 01:02:16 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '() ?>
+WHERE `username` = '1234'
+ LIMIT 1' at line 2
+CRITICAL - 2021-12-06 01:02:16 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '() ?>
+WHERE `username` = '1234'
+ LIMIT 1' at line 2
+#0 C:\laragon\www\aplikasi-pegawai\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT 1\nFROM b...')
+#1 C:\laragon\www\aplikasi-pegawai\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM b...')
+#2 C:\laragon\www\aplikasi-pegawai\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM b...')
+#3 C:\laragon\www\aplikasi-pegawai\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM b...', Array, false)
+#4 C:\laragon\www\aplikasi-pegawai\system\Validation\Rules.php(161): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\aplikasi-pegawai\system\Validation\Validation.php(277): CodeIgniter\Validation\Rules->is_unique('1234', 'username', Array, NULL)
+#6 C:\laragon\www\aplikasi-pegawai\system\Validation\Validation.php(151): CodeIgniter\Validation\Validation->processRules('username', 'username', '1234', Array, Array)
+#7 C:\laragon\www\aplikasi-pegawai\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#8 C:\laragon\www\aplikasi-pegawai\app\Controllers\Register.php(23): CodeIgniter\Controller->validate(Array)
+#9 C:\laragon\www\aplikasi-pegawai\system\CodeIgniter.php(802): App\Controllers\Register->submitRegister()
+#10 C:\laragon\www\aplikasi-pegawai\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#11 C:\laragon\www\aplikasi-pegawai\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\aplikasi-pegawai\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2021-12-06 01:03:00 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '() ?>/register
+WHERE `username` = '123'
+ LIMIT 1' at line 2
+CRITICAL - 2021-12-06 01:03:00 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '() ?>/register
+WHERE `username` = '123'
+ LIMIT 1' at line 2
+#0 C:\laragon\www\aplikasi-pegawai\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT 1\nFROM b...')
+#1 C:\laragon\www\aplikasi-pegawai\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM b...')
+#2 C:\laragon\www\aplikasi-pegawai\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM b...')
+#3 C:\laragon\www\aplikasi-pegawai\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM b...', Array, false)
+#4 C:\laragon\www\aplikasi-pegawai\system\Validation\Rules.php(161): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\aplikasi-pegawai\system\Validation\Validation.php(277): CodeIgniter\Validation\Rules->is_unique('123', 'username', Array, NULL)
+#6 C:\laragon\www\aplikasi-pegawai\system\Validation\Validation.php(151): CodeIgniter\Validation\Validation->processRules('username', 'username', '123', Array, Array)
+#7 C:\laragon\www\aplikasi-pegawai\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#8 C:\laragon\www\aplikasi-pegawai\app\Controllers\Register.php(23): CodeIgniter\Controller->validate(Array)
+#9 C:\laragon\www\aplikasi-pegawai\system\CodeIgniter.php(802): App\Controllers\Register->submitRegister()
+#10 C:\laragon\www\aplikasi-pegawai\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#11 C:\laragon\www\aplikasi-pegawai\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\aplikasi-pegawai\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2021-12-06 01:06:00 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '() ?>/register
+WHERE `$username` = '123'
+ LIMIT 1' at line 2
+CRITICAL - 2021-12-06 01:06:00 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '() ?>/register
+WHERE `$username` = '123'
+ LIMIT 1' at line 2
+#0 C:\laragon\www\aplikasi-pegawai\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT 1\nFROM b...')
+#1 C:\laragon\www\aplikasi-pegawai\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM b...')
+#2 C:\laragon\www\aplikasi-pegawai\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM b...')
+#3 C:\laragon\www\aplikasi-pegawai\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM b...', Array, false)
+#4 C:\laragon\www\aplikasi-pegawai\system\Validation\Rules.php(161): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\aplikasi-pegawai\system\Validation\Validation.php(277): CodeIgniter\Validation\Rules->is_unique('123', '$username', Array, NULL)
+#6 C:\laragon\www\aplikasi-pegawai\system\Validation\Validation.php(151): CodeIgniter\Validation\Validation->processRules('username', 'username', '123', Array, Array)
+#7 C:\laragon\www\aplikasi-pegawai\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#8 C:\laragon\www\aplikasi-pegawai\app\Controllers\Register.php(23): CodeIgniter\Controller->validate(Array)
+#9 C:\laragon\www\aplikasi-pegawai\system\CodeIgniter.php(802): App\Controllers\Register->submitRegister()
+#10 C:\laragon\www\aplikasi-pegawai\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#11 C:\laragon\www\aplikasi-pegawai\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\aplikasi-pegawai\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2021-12-06 01:07:59 --> Table 'aplikasi-pegawai.register' doesn't exist
+CRITICAL - 2021-12-06 01:07:59 --> Table 'aplikasi-pegawai.register' doesn't exist
+#0 C:\laragon\www\aplikasi-pegawai\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT 1\nFROM `...')
+#1 C:\laragon\www\aplikasi-pegawai\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\laragon\www\aplikasi-pegawai\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\laragon\www\aplikasi-pegawai\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\laragon\www\aplikasi-pegawai\system\Validation\Rules.php(161): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\aplikasi-pegawai\system\Validation\Validation.php(277): CodeIgniter\Validation\Rules->is_unique('123', 'username', Array, NULL)
+#6 C:\laragon\www\aplikasi-pegawai\system\Validation\Validation.php(151): CodeIgniter\Validation\Validation->processRules('username', 'username', '123', Array, Array)
+#7 C:\laragon\www\aplikasi-pegawai\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#8 C:\laragon\www\aplikasi-pegawai\app\Controllers\Register.php(23): CodeIgniter\Controller->validate(Array)
+#9 C:\laragon\www\aplikasi-pegawai\system\CodeIgniter.php(802): App\Controllers\Register->submitRegister()
+#10 C:\laragon\www\aplikasi-pegawai\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#11 C:\laragon\www\aplikasi-pegawai\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\aplikasi-pegawai\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2021-12-06 01:08:17 --> Table 'aplikasi-pegawai./register' doesn't exist
+CRITICAL - 2021-12-06 01:08:17 --> Table 'aplikasi-pegawai./register' doesn't exist
+#0 C:\laragon\www\aplikasi-pegawai\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT 1\nFROM `...')
+#1 C:\laragon\www\aplikasi-pegawai\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\laragon\www\aplikasi-pegawai\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\laragon\www\aplikasi-pegawai\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\laragon\www\aplikasi-pegawai\system\Validation\Rules.php(161): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\aplikasi-pegawai\system\Validation\Validation.php(277): CodeIgniter\Validation\Rules->is_unique('123', 'username', Array, NULL)
+#6 C:\laragon\www\aplikasi-pegawai\system\Validation\Validation.php(151): CodeIgniter\Validation\Validation->processRules('username', 'username', '123', Array, Array)
+#7 C:\laragon\www\aplikasi-pegawai\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#8 C:\laragon\www\aplikasi-pegawai\app\Controllers\Register.php(23): CodeIgniter\Controller->validate(Array)
+#9 C:\laragon\www\aplikasi-pegawai\system\CodeIgniter.php(802): App\Controllers\Register->submitRegister()
+#10 C:\laragon\www\aplikasi-pegawai\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#11 C:\laragon\www\aplikasi-pegawai\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\aplikasi-pegawai\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2021-12-06 01:10:23 --> Table 'aplikasi-pegawai.username' doesn't exist
+CRITICAL - 2021-12-06 01:10:23 --> Table 'aplikasi-pegawai.username' doesn't exist
+#0 C:\laragon\www\aplikasi-pegawai\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT 1\nFROM `...')
+#1 C:\laragon\www\aplikasi-pegawai\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\laragon\www\aplikasi-pegawai\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\laragon\www\aplikasi-pegawai\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\laragon\www\aplikasi-pegawai\system\Validation\Rules.php(161): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\aplikasi-pegawai\system\Validation\Validation.php(277): CodeIgniter\Validation\Rules->is_unique('123', 'username', Array, NULL)
+#6 C:\laragon\www\aplikasi-pegawai\system\Validation\Validation.php(151): CodeIgniter\Validation\Validation->processRules('username', 'username', '123', Array, Array)
+#7 C:\laragon\www\aplikasi-pegawai\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#8 C:\laragon\www\aplikasi-pegawai\app\Controllers\Register.php(23): CodeIgniter\Controller->validate(Array)
+#9 C:\laragon\www\aplikasi-pegawai\system\CodeIgniter.php(802): App\Controllers\Register->submitRegister()
+#10 C:\laragon\www\aplikasi-pegawai\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#11 C:\laragon\www\aplikasi-pegawai\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\aplikasi-pegawai\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2021-12-06 01:10:31 --> Table 'aplikasi-pegawai.register' doesn't exist
+CRITICAL - 2021-12-06 01:10:31 --> Table 'aplikasi-pegawai.register' doesn't exist
+#0 C:\laragon\www\aplikasi-pegawai\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT 1\nFROM `...')
+#1 C:\laragon\www\aplikasi-pegawai\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\laragon\www\aplikasi-pegawai\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\laragon\www\aplikasi-pegawai\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\laragon\www\aplikasi-pegawai\system\Validation\Rules.php(161): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\aplikasi-pegawai\system\Validation\Validation.php(277): CodeIgniter\Validation\Rules->is_unique('123', 'username', Array, NULL)
+#6 C:\laragon\www\aplikasi-pegawai\system\Validation\Validation.php(151): CodeIgniter\Validation\Validation->processRules('username', 'username', '123', Array, Array)
+#7 C:\laragon\www\aplikasi-pegawai\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#8 C:\laragon\www\aplikasi-pegawai\app\Controllers\Register.php(23): CodeIgniter\Controller->validate(Array)
+#9 C:\laragon\www\aplikasi-pegawai\system\CodeIgniter.php(802): App\Controllers\Register->submitRegister()
+#10 C:\laragon\www\aplikasi-pegawai\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#11 C:\laragon\www\aplikasi-pegawai\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\aplikasi-pegawai\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2021-12-06 01:10:49 --> Table 'aplikasi-pegawai.app/controllers/register' doesn't exist
+CRITICAL - 2021-12-06 01:10:49 --> Table 'aplikasi-pegawai.app/controllers/register' doesn't exist
+#0 C:\laragon\www\aplikasi-pegawai\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT 1\nFROM `...')
+#1 C:\laragon\www\aplikasi-pegawai\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\laragon\www\aplikasi-pegawai\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\laragon\www\aplikasi-pegawai\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\laragon\www\aplikasi-pegawai\system\Validation\Rules.php(161): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\aplikasi-pegawai\system\Validation\Validation.php(277): CodeIgniter\Validation\Rules->is_unique('123', 'username', Array, NULL)
+#6 C:\laragon\www\aplikasi-pegawai\system\Validation\Validation.php(151): CodeIgniter\Validation\Validation->processRules('username', 'username', '123', Array, Array)
+#7 C:\laragon\www\aplikasi-pegawai\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#8 C:\laragon\www\aplikasi-pegawai\app\Controllers\Register.php(23): CodeIgniter\Controller->validate(Array)
+#9 C:\laragon\www\aplikasi-pegawai\system\CodeIgniter.php(802): App\Controllers\Register->submitRegister()
+#10 C:\laragon\www\aplikasi-pegawai\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#11 C:\laragon\www\aplikasi-pegawai\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\aplikasi-pegawai\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2021-12-06 01:11:02 --> Table 'aplikasi-pegawai./app/controllers/register' doesn't exist
+CRITICAL - 2021-12-06 01:11:02 --> Table 'aplikasi-pegawai./app/controllers/register' doesn't exist
+#0 C:\laragon\www\aplikasi-pegawai\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT 1\nFROM `...')
+#1 C:\laragon\www\aplikasi-pegawai\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\laragon\www\aplikasi-pegawai\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\laragon\www\aplikasi-pegawai\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\laragon\www\aplikasi-pegawai\system\Validation\Rules.php(161): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\aplikasi-pegawai\system\Validation\Validation.php(277): CodeIgniter\Validation\Rules->is_unique('123', 'username', Array, NULL)
+#6 C:\laragon\www\aplikasi-pegawai\system\Validation\Validation.php(151): CodeIgniter\Validation\Validation->processRules('username', 'username', '123', Array, Array)
+#7 C:\laragon\www\aplikasi-pegawai\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#8 C:\laragon\www\aplikasi-pegawai\app\Controllers\Register.php(23): CodeIgniter\Controller->validate(Array)
+#9 C:\laragon\www\aplikasi-pegawai\system\CodeIgniter.php(802): App\Controllers\Register->submitRegister()
+#10 C:\laragon\www\aplikasi-pegawai\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#11 C:\laragon\www\aplikasi-pegawai\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\aplikasi-pegawai\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2021-12-06 01:11:11 --> Table 'aplikasi-pegawai./app/controllers/register/username' doesn't exist
+CRITICAL - 2021-12-06 01:11:11 --> Table 'aplikasi-pegawai./app/controllers/register/username' doesn't exist
+#0 C:\laragon\www\aplikasi-pegawai\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT 1\nFROM `...')
+#1 C:\laragon\www\aplikasi-pegawai\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\laragon\www\aplikasi-pegawai\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\laragon\www\aplikasi-pegawai\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\laragon\www\aplikasi-pegawai\system\Validation\Rules.php(161): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\aplikasi-pegawai\system\Validation\Validation.php(277): CodeIgniter\Validation\Rules->is_unique('123', '/app/controller...', Array, NULL)
+#6 C:\laragon\www\aplikasi-pegawai\system\Validation\Validation.php(151): CodeIgniter\Validation\Validation->processRules('username', 'username', '123', Array, Array)
+#7 C:\laragon\www\aplikasi-pegawai\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#8 C:\laragon\www\aplikasi-pegawai\app\Controllers\Register.php(23): CodeIgniter\Controller->validate(Array)
+#9 C:\laragon\www\aplikasi-pegawai\system\CodeIgniter.php(802): App\Controllers\Register->submitRegister()
+#10 C:\laragon\www\aplikasi-pegawai\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#11 C:\laragon\www\aplikasi-pegawai\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\aplikasi-pegawai\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2021-12-06 01:11:52 --> Unknown column 'email' in 'where clause'
+CRITICAL - 2021-12-06 01:11:52 --> Unknown column 'email' in 'where clause'
+#0 C:\laragon\www\aplikasi-pegawai\system\Database\MySQLi\Connection.php(280): mysqli->query('SELECT 1\nFROM `...')
+#1 C:\laragon\www\aplikasi-pegawai\system\Database\BaseConnection.php(663): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\laragon\www\aplikasi-pegawai\system\Database\BaseConnection.php(591): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\laragon\www\aplikasi-pegawai\system\Database\BaseBuilder.php(1428): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\laragon\www\aplikasi-pegawai\system\Validation\Rules.php(161): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\aplikasi-pegawai\system\Validation\Validation.php(277): CodeIgniter\Validation\Rules->is_unique('123', 'email', Array, NULL)
+#6 C:\laragon\www\aplikasi-pegawai\system\Validation\Validation.php(151): CodeIgniter\Validation\Validation->processRules('username', 'username', '123', Array, Array)
+#7 C:\laragon\www\aplikasi-pegawai\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#8 C:\laragon\www\aplikasi-pegawai\app\Controllers\Register.php(23): CodeIgniter\Controller->validate(Array)
+#9 C:\laragon\www\aplikasi-pegawai\system\CodeIgniter.php(802): App\Controllers\Register->submitRegister()
+#10 C:\laragon\www\aplikasi-pegawai\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#11 C:\laragon\www\aplikasi-pegawai\system\CodeIgniter.php(317): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\aplikasi-pegawai\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
