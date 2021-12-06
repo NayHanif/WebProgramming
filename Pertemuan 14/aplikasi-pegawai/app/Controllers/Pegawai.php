@@ -9,9 +9,16 @@ class Pegawai extends BaseController
 {
     public function index()
     {
-        $model = new PegawaiModel();
-        $data['pegawai'] = $model->getPegawai();
-        echo view('view_header.php');
-        echo view('view_pegawai_list', $data);
+        if (session()->get('logged_in')){
+            //echo "Ini adalah halaman user";
+            $model = new PegawaiModel();
+            $data['pegawai'] = $model->getPegawai();
+            echo view('view_header.php');
+            echo view('view_pegawai_list', $data);
+        }
+        else{
+            echo "Invalid";
+            return redirect()->to(base_url('/login'))->with('error', "Invalid Credential");
+        }
     }
 }
