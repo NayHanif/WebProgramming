@@ -6,6 +6,12 @@ class Home extends BaseController
 {
     public function index()
     {
-        return view('welcome_message');
+        if (session()->get('logged_in')){
+            //echo "Ini adalah halaman user";
+            echo view('dashboard_view');
+        }
+        else{
+            echo view('login_view');
+        }
     }
 }
